@@ -1,0 +1,9 @@
+---
+- name: Setup InfluxData Repo
+  yum_repository:
+    name: InfluxDB Repository - RHEL {{ ansible_distribution_major_version }}
+    description: InfluxData yum repository
+    baseurl: "https://repos.influxdata.com/rhel/{{ ansible_distribution_major_version }}/{{ ansible_architecture }}/stable"
+    state: present
+    gpgcheck: yes
+    gpgkey: https://repos.influxdata.com/influxdb.key
