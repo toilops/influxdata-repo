@@ -16,7 +16,7 @@ N/A
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Example for how to include this role into your playbook.
 
     - hosts: servers
       roles:
